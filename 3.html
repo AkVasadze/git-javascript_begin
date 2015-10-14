@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+	'use strict'
+function Recursion(b, a) {
+	if (a == 1) {
+			return b;
+	}
+	else {
+			return b * Recursion(b, (a -1));
+	}
+}
+var b = parseInt(prompt('Введите число'));
+var a = parseInt(prompt('Введите степень'));
+alert(Recursion(b, a));
+</script>

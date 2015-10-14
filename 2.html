@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script>
+	'use strict'
+function max_number(x, y, z) {
+	if ((x > y) && (x > z))
+		return x;
+	else if (y > z) return y;
+	else return z;
+}
+function min_number(x, y, z) {
+	if ((x < y) && (x < z))
+		return x;
+	else if (y < z) return y;
+	else return z;
+}
+function divide(x, y, z) {
+	if (min_number(a, b, c) == 0)
+		return 'На ноль делить нельзя!';
+	else  return max_number(a, b, c)/min_number(a, b, c);
+}
+var a = parseInt(prompt('Введите 1-е число'));
+var b = parseInt(prompt('Введите 2-е число'));
+var c = parseInt(prompt('Введите 3-е число'));
+alert(max_number(a, b, c)+'/'+min_number(a, b, c)+'='+divide(a, b, c));
+</script>

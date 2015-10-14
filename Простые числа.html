@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+	'use strict'
+function Simple(a)
+{
+	var flag;
+	flag = false;
+	for(var i = 2; i < a; i++)
+		if (a % i == 0) flag = true;
+	return !flag;
+}
+for(var i = 1; i <= 100; i++)
+	document.write(i +' '+ (Simple(i)?" простое" : " не простое" + '</br>'));
+</script>

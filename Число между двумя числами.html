@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+var a = parseInt(prompt('A:'));
+var b = parseInt(prompt('B:'));
+var c = parseInt(prompt('C:'));
+if (((a > b) && (a < c)) || ((a > c) && (a < b))) {
+	alert('A - между B и C');
+} else if (((b > a) && (b < c)) || ((b > c) && (b < a))) {
+	alert('B - между A и C');
+} else if (((c > a) && (c < b)) || ((c > b) && (c < a))) {
+	alert('C - между A и B');
+} else {
+	alert('Введено несколько равных чисел!');
+}
+</script>
